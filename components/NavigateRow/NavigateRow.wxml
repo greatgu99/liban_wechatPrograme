@@ -1,0 +1,6 @@
+<view class='box' bindtap="jumpWriteMessage">
+  <view class='txt'>写消息</view>
+  <view style="border: 8rxp solid red;">
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>

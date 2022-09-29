@@ -1,0 +1,45 @@
+<view class="FooTer">
+  <view class="FTCont" >
+    <block wx:if = "{{page_num == 1}}">
+      <view class="Normal" style="margin-right:20rpx;">
+        <view class="block">
+          <image class="pic" src="/images/TabBarImg/message_selected.png"></image>
+          <view class="txt_selected">消息</view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="Normal" bindtap="jumpIndex" style="margin-right:20rpx;">
+        <view class="block">
+          <image class="pic" src="/images/TabBarImg/message.png"></image>
+          <view class="txt">消息</view>
+        </view>
+      </view>
+    </block>
+    <view wx:if="{{authority==0}}">
+      <view class="Circle">
+        <view class="WCircle">
+          <image class="YCircle" src="/images/TabBarImg/tianjia.png" bindtap="jumpAddMessage"></image>
+        </view>
+      </view>
+    </view>
+    <view wx:else style="margin:0 30rpx ; height: 100rpx;border: 3rpx solid white;"></view>
+    <!-- <view style="height: 90rpx; border: 1px solid white;margin:0 40rpx;"></view> -->
+    <block wx:if = "{{page_num == 2}}">
+      <view class="Normal" style="margin-left:20rpx;">
+        <view class="block">
+          <image class="pic" src="/images/TabBarImg/my_selected.png"></image>
+          <view class="txt_selected">我的</view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="Normal" bindtap="jumpProfile" style="margin-right:20rpx;">
+        <view class="block">
+          <image class="pic" src="/images/TabBarImg/my.png"></image>
+          <view class="txt">我的</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

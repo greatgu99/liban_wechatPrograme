@@ -1,0 +1,32 @@
+<!--components/Message/Message.wxml-->
+<view class="messageBox" catchtap="jumpMessageDetail">
+  <view wx:if="{{messageItem.Read==false}}" class="notice"></view>
+  <view class='leftBox'>
+    <view wx:if="{{messageItem.userImg==''}}" class='leftBoxImg' style="display: flex;justify-content: center;align-items: center;">
+      <image  src='/images/touxiang.png' style="height: 70rpx;width: 70rpx;"></image> 
+    </view>
+    <view wx:else class='leftBoxImg'>
+      <image  src="{{userInfo.userImg}}" style="height: 90rpx;width: 90rpx; border-radius: 15rpx;"></image>
+    </view>
+    <view class='leftBoxName'>{{messageItem.nickName}}</view>
+    <view class='leftBoxTime'>
+      发布时间：
+    </view>
+    <view class='leftBoxTime'>
+      {{messageItem.createdtime}}
+    </view>
+  </view>
+  <view class='rightBox'>
+    <image wx:if="{{messageItem.Collect==false}}" catchtap="collectMessage" class='rightBoxStar' src='/images/MessageImg/uncollected.png'></image>
+    <image wx:if="{{messageItem.Collect==true}}" catchtap="collectMessage" class='rightBoxStar' src='/images/MessageImg/collected.png'></image>
+    <view class='rightBoxTitle'>{{messageItem.title}}</view>
+    <view class='rightBoxContent'> {{messageItem.shortContent}}</view>
+    <!-- <view>{{messageItem}}</view> -->
+    <image class='rightBoxImg' src="{{messageItem.imgList.length>0?messageItem.imgList[0]:''}}"></image>
+    <image class='rightBoxImg' src="{{messageItem.imgList.length>1?messageItem.imgList[1]:''}}"></image>
+    <image class='rightBoxImg' src="{{messageItem.imgList.length>2?messageItem.imgList[2]:''}}"></image>
+    <view wx:if="{{messageItem.Read==false}}" class='rightBoxRead' >未读</view>
+  </view>
+
+</view>
+

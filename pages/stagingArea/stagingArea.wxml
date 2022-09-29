@@ -1,0 +1,13 @@
+<TabBar authority="{{authority}}"></TabBar>
+<view wx:for="{{messageList}}" wx:key="index">
+  <view class='box'>
+    <view class='boxLeft'>
+      <view class='boxLeftTitle'>{{item.title}}</view>
+      <view class='boxLeftTime'>{{item.createdtime}}</view>
+    </view>
+    <view class='boxRight'>
+      <view class='boxRightBtn' bindtap="jumpWriteMessage" data-index="{{index}}">编写</view>
+      <view class='boxRightBtn' bindtap="deleteMessage" data-index="{{index}}" style="background-color: rgb(230, 0, 0);">删除</view>
+    </view>
+  </view>
+</view>

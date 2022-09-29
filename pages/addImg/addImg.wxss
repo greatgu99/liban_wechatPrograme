@@ -1,0 +1,63 @@
+page {
+  background-color: #f0efe9;
+}
+.noticeBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:200rpx;
+
+}
+.noticeBox view{
+  margin-top: 20rpx;
+}
+.Tab{
+  background: #e2e2e2;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:150rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.FTbtn{
+  height: 80rpx;
+  width: 65%;
+  display: flex;
+
+  /* padding: 1rpx 20rpx 20rpx; */
+  /* box-sizing: border-box; */
+  background: #50e3a4;
+  justify-content: center;
+  border-radius: 50rpx;
+  align-items: center;
+}
+.Tab .FTbtn text{
+  color: white;
+  font-size:50rpx;
+}
+.block{
+  height: 160rpx;
+}
+
+.imgBox{
+  margin: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: relative; */ 
+}
+.imgBox .imgBoxImg{
+  margin:20rpx;
+  width: 197rpx;
+  height: 197rpx;
+}
+
+.imgBox .imgBoxCancel{
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 50rpx;
+  height: 50rpx;
+}

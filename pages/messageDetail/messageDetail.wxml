@@ -1,0 +1,41 @@
+<view class="box">
+  <view class="header">
+    <view class="headerLeft">
+      <view wx:if="{{messageItem.userImg==''}}" class='headerPic' style="display: flex;justify-content: center;align-items: center;">
+        <image  src='/images/touxiang.png' style="height: 85rpx;width: 85rpx;"></image> 
+      </view>
+      <view wx:else class='headerPic'>
+        <image  src="{{userInfo.userImg}}" style="height: 110rpx;width: 110rpx; border-radius: 15rpx;"></image>
+      </view>
+    </view>
+    <view class="headerRight">
+      <view class="headerRightTitle">{{messageItem.title}}</view>
+      <view class="headerRightContent">发布时间：{{messageItem.createdtime}}</view>
+
+    </view>
+    <image wx:if="{{messageItem.Collect==false}}" catchtap="collectMessage" class='star' src='/images/MessageImg/uncollected.png'></image>
+    <image wx:if="{{messageItem.Collect==true}}" catchtap="collectMessage" class='star' src='/images/MessageImg/collected.png'></image>
+  </view>
+  <view class='content'>
+    <text>
+      {{messageItem.content}}
+      <!-- 123456 -->
+    </text>
+  </view>
+  <view class='picContent'>
+    <view wx:for="{{messageItem.imgList}}" wx:key="index">
+      <image class='pic' src="{{item}}"></image>  
+    </view>
+    
+
+  </view>
+</view>
+<view class='block'></view>
+<view class='Tab'>
+  <button wx:if="{{!messageItem.Read}}" class="FTbtn" bindtap="readMessage">
+    <view><text>未读</text></view>
+  </button>
+  <button wx:else class="FTbtn" bindtap="readMessage"  style="background-color: #999;">
+    <view><text>已读</text></view>
+  </button>
+</view>

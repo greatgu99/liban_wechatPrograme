@@ -1,0 +1,24 @@
+<view class='box' style="height: 140rpx;" bindtap="chooseImg">
+  <view class='txt'>头像</view>
+  <view style="display: flex;align-items: center;">
+    <view wx:if="{{userInfo.userImg==''}}" class='infoPic'>
+      <image  src='/images/touxiang.png' style="height: 80rpx;width: 80rpx;"></image> 
+    </view>
+    <view wx:else class='infoPic'>
+      <image  src="{{userInfo.userImg}}" style="height: 100rpx;width: 100rpx; border-radius: 20rpx;"></image>
+    </view>
+    <image class="pic" style="margin-left: 20rpx;" src="/images/rightArrow.png"></image>
+  </view>
+</view>
+<view class='box'>
+  <view class='txt'>姓名</view>
+  <view class='txt'>{{userInfo.nickName}}</view>
+</view>
+<view class='box'>
+  <view class='txt'>学院</view>
+  <view class='txt'>{{userInfo.userDepartment}}</view>
+</view>
+<view class='box'>
+  <view class='txt'>学号</view>
+  <view class='txt'>{{userInfo.userId}}</view>
+</view>

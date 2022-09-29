@@ -1,0 +1,28 @@
+<TabBar  authority="{{authority}}"></TabBar>
+<view class='box' bindtap="jumpWriteMessage">
+  <view class='txt'>写消息</view>
+  <view style="border: 8rxp solid red;">
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>
+
+<view class='box' bindtap="jumpStagingArea">
+  <view class='txt'>草稿箱</view>
+  <view style="border: 8rxp solid red;">
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>
+
+<view class='box' bindtap="jumpWastepaperBasket">
+  <view class='txt'>废纸篓</view>
+  <view>
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>
+
+<view class='box' bindtap="jumpManageMessage">
+  <view class='txt'>管理我的消息</view>
+  <view>
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>

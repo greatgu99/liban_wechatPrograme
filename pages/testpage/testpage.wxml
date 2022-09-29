@@ -1,0 +1,5 @@
+<!--pages/testpage/testpage.wxml-->
+
+<TabBar></TabBar>
+<Message></Message>
+<Message></Message>

@@ -1,0 +1,67 @@
+/**搜索框**/
+.input_search_bar {
+  position: relative;
+  padding-top: 5rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  width: 740rpx;
+  background-color: #e2e2e2;
+  padding-bottom: 20rpx;
+}
+
+.input_search_bar .input_search_bar_form {
+  position: relative;
+  padding-top: 10rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 15rpx;
+  background: var(--viewBackgroundColor);
+}
+
+.input_search_bar .input_search_bar_form .input_search_bar_box {
+  position: relative;
+  padding-left: 45rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.input_search_bar .input_search_bar_form .input_search_bar_box .order_icon_search_in_box {
+  position: absolute;
+  left: 15rpx;
+  top: 8rpx;
+}
+
+.input_search_bar .input_search_bar_form .input_search_bar_box .input_search_bar_input {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  padding-left: 25rpx;
+}
+
+.input_search_bar .input_search_bar_form .input_search_bar_box .order_icon_clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7rpx 8rpx;
+}
+
+.input_search_bar .input_search_bar_cancel_btn {
+  margin-left: 12rpx;
+  margin-top: 12rpx;
+  line-height: 28rpx;
+  color: white;
+  /* border: 1px solid green; */
+  padding:10rpx 20rpx;
+  border-radius: 15rpx;
+  background-color: #50e3a4;
+  font-weight: bolder;
+  white-space: nowrap;
+  font-size: 30rpx;
+}

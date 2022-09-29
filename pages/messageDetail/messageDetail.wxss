@@ -1,0 +1,100 @@
+.box{
+  margin:10rpx 20rpx 0;
+  /* border:1rpx solid green; */
+  border-radius: 20rpx;
+  background-color: #f0efe9;
+  padding:30rpx 20rpx 0;
+  position: relative;
+}
+.header{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+.headerLeft{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+}
+.headerPic{
+  width: 110rpx;
+  height: 110rpx;
+  border:1rpx solid green;
+  border-radius: 15rpx;
+}
+.headerRight{
+  margin-left: 10rpx;
+  flex:3;
+  /* border: 1px solid green; */
+}
+.headerRightTitle{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.headerRightContent{
+  font-size: 25rpx;
+  color:#666;
+  margin-top: 10rpx;
+
+}
+.star{
+  height:45rpx;
+  width: 45rpx;
+  position: absolute;
+  left:650rpx;
+  top:10rpx;
+  /* border: 5rpx solid yellow; */
+}
+.content{
+  margin:15rpx 30rpx;
+  margin-bottom: 50rpx;
+  /* border: red solid ; */
+
+}
+.content text{
+  word-break: break-all;
+}
+.picContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: solid red; */
+}
+.pic{
+  width: 175rpx;
+  height: 175rpx;
+  margin: 0 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid green;
+}
+.Tab{
+  background: #e2e2e2;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:150rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.Tab .FTbtn{
+  height: 80rpx;
+  width: 65%;
+  display: flex;
+  /* padding: 1rpx 20rpx 20rpx; */
+  /* box-sizing: border-box; */
+  background: #50e3a4;
+  justify-content: center;
+  border-radius: 50rpx;
+  align-items: center;
+}
+.Tab .FTbtn text{
+  color: white;
+  font-size:50rpx;
+}
+.block{
+  height: 160rpx;
+}

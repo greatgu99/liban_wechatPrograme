@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "TabBar":"/components/TabBar/TabBar",
+    "Message":"/components/Message/Message"
+  },
+    "navigationBarBackgroundColor": "#f0efe9",
+    "navigationBarTitleText": "我的信息"
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "TabBar":"/components/TabBar/TabBar",
+    "NavigateRow":"/components/NavigateRow/NavigateRow"
+  },
+  "navigationBarTitleText":"废纸篓"
+}

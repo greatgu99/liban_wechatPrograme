@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "TabBar":"/components/TabBar/TabBar",
+    "Message":"/components/Message/Message",
+    "InputSearch":"/components/Search/Search"
+  },
+  "navigationBarTitleText":"主页"
+}

@@ -1,0 +1,63 @@
+page {
+  background-color: #f0efe9;
+  width: 100%;
+  margin:0;
+}
+.box{
+  margin:30rpx;
+  padding-bottom: 20rpx;
+  /* padding-left: 10rpx; */
+  border-bottom: 2rpx solid #ccc;
+}
+.btn_unselected{
+  margin: 10rpx;
+  border:6rpx solid #aaa;
+  color: white;
+  padding: 10rpx 20rpx;
+  border-radius:20rpx;
+  background-color: #bbb;
+}
+.btn_selected{
+  margin: 10rpx;
+  border:6rpx solid #50e3a4;
+  color: #33996d;
+  padding: 10rpx 20rpx;
+  border-radius:20rpx;
+  background-color: #ddd;
+  font-weight: 1000;
+  /* font-size: 0rpx; */
+}
+.classText{
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+.Tab{
+  background: #e2e2e2;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:150rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.Tab .FTbtn{
+  height: 80rpx;
+  width: 65%;
+  display: flex;
+  /* padding: 1rpx 20rpx 20rpx; */
+  /* box-sizing: border-box; */
+  background: #50e3a4;
+  justify-content: center;
+  border-radius: 50rpx;
+  align-items: center;
+}
+.Tab .FTbtn text{
+  color: white;
+  font-size:50rpx;
+}
+.block{
+  height: 160rpx;
+}

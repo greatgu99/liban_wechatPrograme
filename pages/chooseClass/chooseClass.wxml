@@ -1,0 +1,15 @@
+<view wx:for="{{className}}" wx:for-item="classItem" wx:for-index='i' wx:key="i" class='box'>
+  <view class='classText'>{{classItem.name}}:</view>
+  <view style="display: flex;flex-wrap: wrap;">
+    <view wx:for="{{classItem.classList}}" wx:for-index="j" wx:key="j">
+      <view wx:if="{{iindex==i && jindex==j}}" class='btn_selected' bindtap="selectClassItem" data-iindex='{{i}}' data-jindex='{{j}}'>{{item}}</view>
+      <view wx:else class='btn_unselected' bindtap="selectClassItem" data-iindex='{{i}}' data-jindex='{{j}}'>{{item}}</view>
+    </view>
+  </view>
+</view>
+<view class='block'></view>
+<view class='Tab'>
+  <button class="FTbtn" bindtap="readMessage">
+    <view><text>完成</text></view>
+  </button>
+</view>

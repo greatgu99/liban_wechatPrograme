@@ -1,0 +1,63 @@
+<!--pages/addPost/addPost.wxml-->
+<view class='FormCont'>
+
+  <view class = "InputTitle">
+    <input class="weui-input" value="{{title}}" auto-focus name="inputTitle" bindinput="bindTitle" maxlength='50' placeholder="请输入标题" />
+  </view>
+  <view class ="Input">
+    <textarea class="weui-input" value="{{text_content}}" name="inputPost" bindinput="bindText" maxlength='100' placeholder="请输入内容(100字以内)" />
+    <text class="Count">{{text_length}}/100</text> 
+  </view>
+
+  <!-- <view class='box'>
+    <view style="display: flex;">
+      <image class="pic1" src="/images/huixingzhen.png"></image>
+      <view class='txt'>添加附件</view>
+    </view>
+    <view>
+
+    </view>
+  </view>
+
+  <view class='box'>
+    <view style="display: flex;">
+      <image class="pic1" src="/images/shoujian.png"></image>
+      <view class='txt'>添加收件人</view>
+    </view>
+    <view>
+
+    </view>
+  </view> -->
+  <view class='box' bindtap="addImg">
+    <view style="display: flex;">
+      <image class="pic1" src="/images/tupian.png"></image>
+      <view class='txt'>添加图片</view>
+    </view>
+    <view>
+      <image class="pic" src="/images/rightArrow.png"></image>
+    </view>
+  </view>
+  <view class='displayImg'></view>
+  <view class='box' bindtap="jumpChooseClass">
+    <view style="display: flex;">
+      <image class="pic1" src="/images/jinhao.png"></image>
+      <view class='txt'>发布类型选择</view>
+    </view>
+    <view>
+      <image class="pic" src="/images/rightArrow.png"></image>
+    </view>
+  </view>
+
+  <view class='Tab'>
+    <button class="FTbtn" bindtap="staging">
+      <view><text>暂存</text></view>
+    </button>
+    <button class="FTbtn" bindtap="publish" style="height: 110rpx;width: 220rpx; font-size: 60rpx;font-weight: bolder;">
+      <view style="margin-bottom: 10rpx;"><text>发布</text></view>
+    </button>
+    <button class="FTbtn" bindtap="delete">
+      <view><text>删除</text></view>
+    </button>
+  </view>
+
+</view>

@@ -1,0 +1,33 @@
+<TabBar page_num="2"  authority="{{authority}}"></TabBar>
+
+<view class='infoBox'>
+  <view wx:if="{{userInfo.userImg==''}}" class='infoPic'>
+    <image  src='/images/touxiang.png' style="height: 180rpx;width: 180rpx;"></image> 
+  </view>
+  <view wx:else class='infoPic'>
+    <image  src="{{userInfo.userImg}}" style="height: 250rpx;width: 250rpx; border-radius: 100%;"></image>
+  </view>
+  <view class='infoTxt'>{{userInfo.nickName}}</view>
+  <view class='infoTxt'>{{userInfo.userDepartment}}</view>
+  <view class='infoTxt'>学号：{{userInfo.userId}}</view>
+</view>
+<!-- <view class='box'>
+  <view class='txt'>消息提醒</view>
+  <view>
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>
+
+<view class='box'>
+  <view class='txt'>我的私信</view>
+  <view>
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view> -->
+
+<view class='box' bindtap="jumpProfileSettings">
+  <view class='txt'>设置</view>
+  <view>
+    <image class="pic" src="/images/rightArrow.png"></image>
+  </view>
+</view>

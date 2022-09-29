@@ -1,0 +1,29 @@
+<view>
+  <view style="margin-top: 40rpx;width: 450rpx;">
+    <button class="addImgBtn" bindtap="addImg" type="primary">点击按钮增加图片</button>
+  </view>
+  <view style = "margin:40rpx;">
+    已选择的图片：
+  </view>
+  <view wx:if="{{tempFilePathList.length==0}}" class="noticeBox">
+    <view>暂未选择任何图片</view>
+    <view>请点击上方按钮进行选择</view>
+
+  </view>
+  <view wx:else="" class="imgBox">
+    <view wx:for="{{tempFilePathList}}" wx:key="index"> 
+      <view style="position: relative;">
+        <image src="{{item}}" class="imgBoxImg"></image>
+        <image src="/images/cancel.png" bindtap="cancelImg" data-status="{{index}}" class="imgBoxCancel"></image>
+      </view>
+    </view>
+  </view>
+  <view class='Tab'>
+    <button class="FTbtn" bindtap="finish">
+      <!-- <view wx:if="{{tempFilePathList.length==0}}"><text>取消</text></view> -->
+      <view><text>完成</text></view>
+
+    </button>
+  </view>
+  <view class='block'></view>
+</view>

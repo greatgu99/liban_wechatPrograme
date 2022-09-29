@@ -1,0 +1,29 @@
+<wxs src="../../utils/str.wxs" module="toolStr" />
+<TabBar page_num="1" authority="{{authority}}"></TabBar>
+<InputSearch bind:searchVal="searchMessage"></InputSearch>
+
+<swiper indicator-dots="true"
+  autoplay="true" interval="2000" duration="500">
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <view class="swiper-item {{item}}">{{advertisement[index]}}</view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="chooseTitle">
+  <view wx:for="{{titleItemList}}" wx:key="index">
+    <view class="chooseTitleItem" bindtap="changeTitleItem" data-status="{{index}}">
+      <view>{{item}}</view>
+      <view class="chooseTitleLine" wx:if="{{showTitle == index}}"></view>
+      <view wx:else class="noChooseTitleLine" ></view>
+    </view>
+  </view>
+</view>
+<view wx:for="{{messageList}}" wx:key="index">
+  <view wx:if="{{(item.classify == showTitle || showTitle == 0) && (searchContent=='' || toolStr.indexOf(item.title, searchContent)!=-1)}}">
+    
+    <Message messageItem="{{item}}"></Message>
+  </view>
+</view>
+<view class='block'></view>
